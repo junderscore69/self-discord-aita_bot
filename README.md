@@ -70,4 +70,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ---
 
-## [☕ Buy Me a Coffee](https://coff.ee/jundersore)
+## [☕ Buy Me a Coffee](https://coff.ee/junderscore)
