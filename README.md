@@ -5,6 +5,13 @@ A Discord bot that turns Reddit's "Am I the A**hole?" posts into a hilarious, ga
 
 ---
 
+### 💖 Why This Exists
+
+Made for my girlfriend and I to discuss how we see and judge certain situations — a fun way to spark conversation and understand each other better.
+
+
+---
+
 ### 🤖 Project Attribution
 
 All code, setup guides, and wiki content for this project were created in collaboration with [ChatGPT](https://openai.com/chatgpt) by OpenAI.
