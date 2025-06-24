@@ -1,0 +1,13 @@
+# Secrets and credentials
+.env
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Replit
+.replit
