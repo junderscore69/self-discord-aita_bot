@@ -13,157 +13,47 @@ Special thanks to the AI assistant for helping turn chaotic Reddit drama into a 
 
 ---
 
-## 🚀 Replit Setup (Easiest Way to Run It)
+## 📦 Features
 
-Even if you've never coded before, you can run this bot for free using [Replit](https://replit.com):
-
-### 🌱 1. Create a Replit Project from This Repo
-
-- Go to [https://replit.com](https://replit.com)
-- Click **"Create"** → choose **"Import from GitHub"**
-- Paste the repo URL (e.g., `https://github.com/YOUR_USERNAME/self-discord-aita-gameshow-bot`)
-- Click **"Import from GitHub"** to create the Repl
-
-### 📦 2. Install Python Packages
-
-Replit may auto-install everything listed in `requirements.txt`. If not:
-
-- Open the **"Shell"** tab at the bottom and run:
-
-```bash
-pip install -r requirements.txt
-```
-
-This installs all the libraries like `discord`, `openai`, and `praw`.
-
-### 🔐 3. Add Your Secrets (.env)
-
-In the left sidebar:
-
-- Click the **"Secrets"** tab (🔐 icon or labeled “Environment Variables”)
-- Add the following keys, one at a time:
-
-| Key | Description |
-|-----|-------------|
-| `DISCORD_TOKEN` | Your Discord bot token |
-| `GUILD_ID` | Your Discord server (guild) ID |
-| `REDDIT_CLIENT_ID` | Reddit app client ID |
-| `REDDIT_CLIENT_SECRET` | Reddit app secret |
-| `OPENAI_API_KEY` | Your OpenAI API key |
-
-You do **not** need to manually create a `.env` file — Replit handles it for you with the Secrets tab.
-
-### ▶️ 4. Run the Bot
-
-- Click the big green **"Run"** button at the top
-- Or, in the Shell tab, type:
-
-```bash
-python main.py
-```
-
-If successful, you’ll see something like:
-
-```
-✅ Synced 3 commands to guild 1234567890
-🤖 Logged in as AITA Game Bot#1234
-```
-
-Now, in your Discord server, try `/aita` and enjoy the show!
+- Pulls hot AITA posts directly from Reddit
+- Chops long stories into Discord-embed-friendly chunks
+- AI-generated “Host Recap” and “Crowd Verdict” summaries using OpenAI
+- Super easy to set up on Replit or locally
 
 ---
 
-## 🔐 Secrets Setup Guide
+## 🚀 Setup
 
-Here’s how to get each of those keys:
+Choose your setup path:
 
-### 🗝️ DISCORD_TOKEN
+### 🟢 [Easy Replit Setup](../../wiki/Easy-Replit-Setup-(Step‐by‐Step-Guide))
 
-1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
-2. Create a new application → Go to **Bot** tab → Click **Add Bot**
-3. Click **Reset Token** → Copy and use that value as `DISCORD_TOKEN`
+Start here if you're new to coding. You’ll be up and running in minutes.
 
-> 🔗 [How to Add Your Bot to a Server](https://discordpy.readthedocs.io/en/stable/discord.html)
+### 🧠 [Advanced Local Setup](../../wiki/Advanced-Local-Setup-(Run-AITA-Bot-on-Your-Machine))
 
-### 🏷️ GUILD_ID
-
-1. In Discord, go to your server
-2. Right-click the server name → Click **"Copy Server ID"**
-
-> ⚙️ If you don’t see this option, turn on **Developer Mode** in Discord settings > Advanced
-
-### 🔑 REDDIT_CLIENT_ID & REDDIT_CLIENT_SECRET
-
-1. Go to [Reddit Apps](https://www.reddit.com/prefs/apps)
-2. Scroll down → Click **"Create App"**
-3. Choose "script" type
-4. Set a name, and for redirect URL just use `http://localhost`
-5. After creating:
-   - `client_id` is under the app name
-   - `client_secret` is labeled as such
-
-### 🔐 OPENAI_API_KEY
-
-1. Go to [platform.openai.com](https://platform.openai.com/account/api-keys)
-2. Click **Create new secret key**
-3. Copy and use that as your `OPENAI_API_KEY`
-
-> 🧠 Make sure your API key has access to `gpt-4.1-nano` or another supported model.
+Run the bot on your own machine with full control using Python and Discord dev tools.
 
 ---
 
-## 💻 Advanced Local Setup (VS Code, Terminal, etc.)
+## 🔑 [Secrets Setup (API Keys Guide)](../../wiki/Secrets-Setup-(API-Keys-Guide))
 
-If you're running this locally, here’s how to set it up:
-
-### 1. Clone the Repo
-
-```bash
-git clone https://github.com/YOUR_USERNAME/self-discord-aita-gameshow-bot.git
-cd self-discord-aita-gameshow-bot
-```
-
-### 2. Create and Fill in `.env`
-
-Create a file named `.env` in the root with this structure:
-
-```
-DISCORD_TOKEN=your_discord_bot_token
-GUILD_ID=your_discord_server_id
-REDDIT_CLIENT_ID=your_reddit_client_id
-REDDIT_CLIENT_SECRET=your_reddit_client_secret
-OPENAI_API_KEY=your_openai_api_key
-```
-
-### 3. Install Dependencies
-
-We recommend using a virtual environment:
-
-```bash
-python -m venv venv
-source venv/bin/activate   # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 4. Run the Bot
-
-```bash
-python main.py
-```
+Learn how to get your Discord, Reddit, and OpenAI keys to make the bot work.
 
 ---
 
-## 🧠 Project Structure
+## 🎨 [Bot Customization Guide](../../wiki/Bot-Customization-Guide)
 
-```
-.
-├── main.py                 # The main bot code
-├── prompts.txt            # AI prompt templates (editable)
-├── requirements.txt       # Python dependencies
-├── .env                   # Secret API keys (not committed)
-├── .gitignore             # Tells Git to ignore secrets, pyc files, etc
-└── README.md              # This file!
-```
+Tweak the prompts, personality, or game mechanics. Make it your own!
+
+---
+
+## 📁 Project Files
+
+- `main.py`: Bot logic
+- `prompts.txt`: AI prompt templates
+- `.env`: Your secret tokens (never share this!)
+- `requirements.txt`: Python dependencies
 
 ---
 
