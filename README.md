@@ -67,3 +67,7 @@ Tweak the prompts, personality, or game mechanics. Make it your own!
 ## 📄 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+## [☕ Buy Me a Coffee](https://coff.ee/jundersore)
