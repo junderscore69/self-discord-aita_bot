@@ -1,6 +1,15 @@
 # 🤖 AITA Game Show Bot
 
-Created with ChatGPT. A Discord bot that turns Reddit's "Am I the A**hole?" posts into a hilarious, game-show-style showdown — powered by OpenAI, PRAW, and Discord's slash commands. Get juicy posts, AI-powered recaps, and verdicts based on top Reddit comments.
+
+A Discord bot that turns Reddit's "Am I the A**hole?" posts into a hilarious, game-show-style showdown — powered by OpenAI, PRAW, and Discord's slash commands. Get juicy posts, AI-powered recaps, and verdicts based on top Reddit comments.
+
+---
+
+### 🤖 Project Attribution
+
+All code, setup guides, and wiki content for this project were created in collaboration with [ChatGPT](https://openai.com/chatgpt) by OpenAI.
+
+Special thanks to the AI assistant for helping turn chaotic Reddit drama into a Discord game night classic.
 
 ---
 
